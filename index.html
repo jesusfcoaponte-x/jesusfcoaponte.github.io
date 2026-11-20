@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programación semanal | Radio</title>
+  <link rel="stylesheet" href="css/programacion.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">RADIO · PROGRAMACIÓN</p>
+        <h1>Nuestra programación</h1>
+        <p class="intro">Programación semanal, actualizada automáticamente desde GitHub.</p>
+      </div>
+      <span id="status" class="status" role="status">Cargando programación…</span>
+    </header>
+
+    <section class="schedule-shell" aria-label="Grilla de programación semanal">
+      <div class="schedule" id="schedule">
+        <div class="corner">HORA</div>
+        <div class="day-headings" id="day-headings"></div>
+        <div class="time-axis" id="time-axis"></div>
+        <div class="day-columns" id="day-columns"></div>
+      </div>
+    </section>
+    <div id="messages" class="messages" aria-live="polite"></div>
+    <p class="footnote">Esta grilla se construye leyendo <code>data/programacion.csv</code>. Para cambiarla, modifica únicamente ese CSV en tu repositorio.</p>
+  </main>
+  <script src="js/programacion.js"></script>
+</body>
+</html>
